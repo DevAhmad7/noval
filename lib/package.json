@@ -1,6 +1,6 @@
 {
   "name": "noval",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library based on (ContextApi) for managing state in the application.",
   "sideEffects": false,
   "repository": "DevAhmad7/noval",
@@ -10,10 +10,12 @@
   "dependencies": {
     "react": "^18.2.0"
   },
+  "typings": "index.d.ts",
   "files": [
+    "index.js",
     "README.md",
-    "initialize.js",
-    "index.js"
+    "index.d.ts",
+    "initialize.js"
   ],
   "main": "index.js",
   "keywords": [
