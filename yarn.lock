@@ -2227,13 +2227,6 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-hybrid@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/use-hybrid/-/use-hybrid-1.0.3.tgz#9afb98c36dba3e6d51a75bd29af09dff0dadd36e"
-  integrity sha512-Nj7jGMNP+4RvbydtkQfpkOCIS9xGfQJhwiughuw8vuVsMkDItjYC8pgFUsfTyFUhUV4lbYWRRzy41KKDC5B6hQ==
-  dependencies:
-    react "^18.2.0"
-
 util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"

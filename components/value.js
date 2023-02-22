@@ -1,7 +1,7 @@
-import { useMainSelector } from "@hooks/main-store";
+import { useSelector } from "noval";
 
 export default function ValueComponent({ select }) {
-  const value = useMainSelector(select);
+  const value = useSelector(select);
 
   return (
     <span>{value}</span>

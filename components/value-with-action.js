@@ -7,7 +7,7 @@ export default function ValueWithActionComponent() {
   // you can use like this
 
   // const { dispatch } = useMainDispatch();
-  // const getTodo = () => dispatch(async ({ update, state, add }) => {
+  // const getTodo = () => dispatch(async ({ update, state, addState }) => {
   //   update({ loading: true }, "assets")
 
   //   const id = state?.todo?.id || 0
@@ -15,8 +15,8 @@ export default function ValueWithActionComponent() {
   //   const response = await fetch(url)
   //   const todo = await response.json()
 
-  //   add({ loading: false }, "assets")
-  //   add({ age: todo.id, color: `${todo.userId}_${todo.id}` }, "info")
+  //   addState({ loading: false }, "assets")
+  //   addState({ age: todo.id, color: `${todo.userId}_${todo.id}` }, "info")
   //   update({ todo })
   // })
 

@@ -1,7 +1,7 @@
-import { useMainDispatch } from "@hooks/main-store";
+import { useDispatch } from "noval";
 
 export default function ActionInputComponent({ callbak }) {
-  const { dispatch } = useMainDispatch();
+  const { dispatch } = useDispatch();
 
   return (
     <input type="text"

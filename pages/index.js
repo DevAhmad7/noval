@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>test react-store</title>
-        <meta name="description" content="test react-store || next app" />
+        <title>test noval</title>
+        <meta name="description" content="test noval || next app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col items-center justify-center gap-3 h-screen">
-        {/* <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
           age: <ValueComponent select="info.age" />
           color: <ValueComponent select="info.color" />
         </div>
@@ -36,7 +36,7 @@ export default function Home() {
           fullname: <ValueComponent
             select={(state) => `${state.first} ${state.last}`}
           />
-        </div> */}
+        </div>
         ............................
         <ValueWithActionComponent />
       </main>
