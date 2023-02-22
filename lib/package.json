@@ -1,0 +1,41 @@
+{
+  "name": "noval",
+  "version": "1.0.0",
+  "description": "A library based on (ContextApi) for managing state in the application.",
+  "sideEffects": false,
+  "repository": "DevAhmad7/noval",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "files": [
+    "README.md",
+    "initialize.js",
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "state",
+    "dispatcher",
+    "flux",
+    "predictable",
+    "functional",
+    "redux",
+    "redux-toolkit",
+    "managing state",
+    "reducer",
+    "state",
+    "noval",
+    "store",
+    "immutable"
+  ],
+  "contributors": [
+    "Ahmad Hassan <ah77731@gmail.com>"
+  ],
+  "npmName": "noval",
+  "author": "Ahmad Hassan",
+  "license": "MIT"
+}
