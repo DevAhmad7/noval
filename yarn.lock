@@ -1464,12 +1464,10 @@ normalize-range@^0.1.2:
   resolved "https://registry.npmjs.org/normalize-range/-/normalize-range-0.1.2.tgz"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
-noval@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/noval/-/noval-1.0.2.tgz#c405faf18cfa89357eee387a9b7f1a207dd85fe5"
-  integrity sha512-cMlaXikeB2iBSVioRYpWcxClXd23nYpT0OVes67p3fcnr9W5Exk2C+xF29kDZnBAkh6QQMQ0OaY1oM1fSiq7sw==
-  dependencies:
-    react "^18.2.0"
+noval@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/noval/-/noval-1.0.4.tgz#07ae27b0c48526f5cd0ccecf346c44a7ac87c542"
+  integrity sha512-k0M1YJQj/ki7ttWo2DdetPdge8yd+hrOgf2A9VGICu4cWRzu+I2mgsSI9v80MbbJBVfqlBUt1QdJHeQQ1vC5Yw==
 
 object-assign@^4.1.1:
   version "4.1.1"
@@ -1716,9 +1714,9 @@ quick-lru@^5.1.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-react-dom@18.2.0:
+react-dom@^18.2.0:
   version "18.2.0"
-  resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
   dependencies:
     loose-envify "^1.1.0"
@@ -1729,9 +1727,9 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react@18.2.0, react@^18.2.0:
+react@^18.2.0:
   version "18.2.0"
-  resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"

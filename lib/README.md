@@ -10,49 +10,23 @@
     <img src="https://i.ibb.co/THLdmXP/react-store.gif" alt="noval" />
 </div>
 
-### :x:normal-store:exclamation:
+### :x:normal-store
 
 - when change state all components re-render
 <div>
      <img src="https://i.ibb.co/17Jwgwj/normal-store.gif" alt="normal-store" />
 </div>
 
+## Getting Started
+
+To use Noval, the [react](https://www.npmjs.com/package/react) version must be 18 or later
+
 ## Install
 
 ```js
 npm install noval
-```
-
-- or
-
-```js
+// or
 yarn add noval
-```
-
-## Create Store
-
-- in root file like (App.js)
-
-```js
-import noval from "noval";
-// create store
-const ProviderNoval = noval(
-  {
-    first: "Ahmad",
-    last: "Hassan",
-    info: { color: "green" },
-  } /* createDispatch (optional) */
-);
-
-/* 
-// or get ProviderNoval without create store
-// like import { ProviderNoval } from "noval";
-*/
-
-// add Provider to wrap main component
-export default function MyApp() {
-  return <ProviderNoval>{/* children */}</ProviderNoval>;
-}
 ```
 
 Check out the [example](https://github.com/DevAhmad7/noval) and [documentation](https://github.com/DevAhmad7/noval#readme).

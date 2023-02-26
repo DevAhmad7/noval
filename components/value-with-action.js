@@ -5,8 +5,7 @@ export default function ValueWithActionComponent() {
   const loading = useSelector("assets.loading");
 
   // you can use like this
-
-  // const { dispatch } = useMainDispatch();
+  // const { dispatch } = useDispatch();
   // const getTodo = () => dispatch(async ({ update, state, addState }) => {
   //   update({ loading: true }, "assets")
 
@@ -32,7 +31,7 @@ export default function ValueWithActionComponent() {
 
     addState({ loading: false }, "assets")
     addState({ age: todoData.id, color: `${todoData.userId}_${todoData.id}` }, "info")
-    dispatch({ todo: todoData })
+    await dispatch({ todo: todoData })
   }
 
   return (<>

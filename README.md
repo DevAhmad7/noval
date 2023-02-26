@@ -10,22 +10,20 @@
     <img src="https://i.ibb.co/THLdmXP/react-store.gif" alt="noval" />
 </div>
 
-### :x:normal-store:exclamation:
+### :x:normal-store
 
 - when change state all components re-render
 <div>
      <img src="https://i.ibb.co/17Jwgwj/normal-store.gif" alt="normal-store" />
 </div>
 
+## Getting Started
+To use Noval, the [react](https://www.npmjs.com/package/react) version must be 18 or later
 ## Install
 
 ```js
 npm install noval
-```
-
-- or
-
-```js
+// or
 yarn add noval
 ```
 

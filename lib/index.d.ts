@@ -9,12 +9,12 @@ export declare function useSelector(
 
 export declare function useDispatch(): {
   addState: (values: object, selector: string) => undefined;
-  dispatch: (param1: any, param2: any) => Function;
+  dispatch: (param1: any, param2: any) => Function | Promise;
 };
 
 export declare function ProviderNoval(): ReactElement;
 
 export default function noval(
   initialState: object,
-  dispatcher: Function
+  createDispatch: Function
 ): typeof ProviderNoval;
