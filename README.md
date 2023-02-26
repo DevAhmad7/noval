@@ -3,6 +3,8 @@
 - A library based on (ContextApi) for managing state in the application.
 - Supported for (react/react-native/next)
 
+### native and light
+
 ### :white_check_mark:noval:white_check_mark:
 
 - when change state just component with current selector re-render
@@ -18,7 +20,9 @@
 </div>
 
 ## Getting Started
+
 To use Noval, the [react](https://www.npmjs.com/package/react) version must be 18 or later
+
 ## Install
 
 ```js

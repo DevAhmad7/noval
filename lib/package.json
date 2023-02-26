@@ -1,6 +1,6 @@
 {
   "name": "noval",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A library based on (ContextApi) for managing state in the application.",
   "sideEffects": false,
   "repository": "DevAhmad7/noval",
