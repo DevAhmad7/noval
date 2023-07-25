@@ -20,7 +20,7 @@ export default function ValueWithActionComponent() {
   // })
 
   // or use this
-  const { dispatch, addState } = useDispatch();
+  const { dispatch, addState, dirty } = useDispatch();
   const getTodo = async () => {
     dispatch({ loading: true }, "assets")
 
@@ -34,6 +34,11 @@ export default function ValueWithActionComponent() {
     await dispatch({ todo: todoData })
   }
 
+  // you can use dirty as string or array
+  // const clearData = () => dirty("todo.title");
+  const clearData = () => dirty(["todo", "info.age"]);
+  // todo and assets.loading will be removed from main State
+
   return (<>
     <button onClick={getTodo}>
       {loading ? "loading ..." : "get todo!"}
@@ -43,5 +48,8 @@ export default function ValueWithActionComponent() {
       <span>title: {todo.title}</span>
       <span>completed: {todo.completed.toString()}</span>
     </div>}
+    <button onClick={clearData}>
+      Clear Data
+    </button>
   </>)
 }

@@ -144,7 +144,7 @@ import { useDispatch } from "noval";
 ...
 const ExampleDispatch = () => {
   // you can use this useDispatch at any component
-  const { dispatch } = useDispatch(); // return object => { dispatch, addState }
+  const { dispatch } = useDispatch(); // return object => { dispatch, addState, dirty }
 
   /*
     dispatch is a function that takes two parameters
@@ -191,7 +191,7 @@ const ExampleValueWithAction = () => {
   const loading = useSelector("assets.loading");
 
   // you can use like this
-  const { dispatch, addState } = useDispatch();
+  const { dispatch, addState, dirty } = useDispatch();
 
   const getTodo = async () => {
     dispatch({ loading: true }, "assets");
@@ -203,10 +203,16 @@ const ExampleValueWithAction = () => {
     dispatch({ todo: todoData });
   };
 
+  // you can use dirty as string or array
+  // const clearData = () => dirty("todo.title");
+  const clearData = () => dirty(["todo", "assets.loading"]);
+  // todo and assets.loading will be removed from main State
+
   return (
     <>
       <button onClick={getTodo}>{loading ? "loading ..." : "get todo!"}</button>
       {todo && <span>title: {todo.title}</span>}
+      <button onClick={clearData}>Clear Data</button>
     </>
   );
 };
