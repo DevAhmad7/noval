@@ -3,11 +3,12 @@ import { ReactElement } from "react";
 export as namespace noval;
 
 export declare function useSelector(
-  selector: undefined | string | Function,
+  selector: undefined | array | string | Function,
   fallback: any
 ): any;
 
 export declare function useDispatch(): {
+  dirty: (values: string | array) => undefined;
   addState: (values: object, selector: string) => undefined;
   dispatch: (param1: any, param2: any) => Function | Promise;
 };

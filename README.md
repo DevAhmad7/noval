@@ -117,16 +117,18 @@ import { useSelector } from "noval";
 const ExampleState = () => {
   // you can use this useSelector at any component
   const first = useSelector("first"); // return Ahmad
+  // Or const [first, age] = useSelector(['first', 'info.age']);
   // Or useSelector((state) => state.first); // return Ahmad
   // Or call a new key named (fullname) and set fallback, if you want
-  // useSelector("fullname", (state) => `${state.first} ${state.last}`); // return Ahmad Hassan
+  // like => useSelector("fullname", (state) => `${state.first} ${state.last}`); // return Ahmad Hassan
   // In all cases above, it will not be re-render, Except when changing the value of first
 
   /*
     useSelector is a function that takes two parameters
-    1- param1 (selector) type: (string | function) - required
-      :string like "first" => "Ahmad or "info.age" return 28
-      :function like (state) => state.info.age
+    1- param1 (selector) type: (string | array | function | undefined) - required
+      :string like "first" => "Ahmad or "info.age" return 29
+      :array like ['first', 'info.age'] => ["Ahmad", 29]
+      :function like (state) => state.info.age  return 29
     2- param2 (fallback) type: any => if param1 undefined return param2 value from fallback
       :string like useSelector("status", "offline"); // return offline if status undefined
       :array like useSelector("nums", ["one", "two"]); // return ["one", "two"] if nums undefined
@@ -172,7 +174,15 @@ const ExampleDispatch = () => {
 
       :if param1 type: (string)
         param2 will be the payload example:
-        dispatch("setAge", 28 )
+        dispatch("setAge", 29 )
+  */
+
+  /*
+    dirty is a function that takes one parameter
+    param type: (string | array) - required
+      :string like dirty("first")
+      :array like dirty(['first', 'info.age'])
+    Deletes the selected items from the main state
   */
 
   return (<input type="text"

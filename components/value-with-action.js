@@ -1,8 +1,7 @@
 import { useDispatch, useSelector } from "noval";
 
 export default function ValueWithActionComponent() {
-  const todo = useSelector("todo", null);
-  const loading = useSelector("assets.loading");
+  const [todo, loading] = useSelector(["todo", "assets.loading"]);
 
   // you can use like this
   // const { dispatch } = useDispatch();
