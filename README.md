@@ -182,7 +182,7 @@ const ExampleDispatch = () => {
     param type: (string | array) - required
       :string like dirty("first")
       :array like dirty(['first', 'info.age'])
-    Deletes the selected items from the main state
+    set the selected items from the main default state
   */
 
   return (<input type="text"
