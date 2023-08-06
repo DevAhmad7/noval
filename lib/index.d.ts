@@ -8,6 +8,7 @@ export declare function useSelector(
 ): any;
 
 export declare function useDispatch(): {
+  reset: (values: string | array) => undefined;
   dirty: (values: string | array) => undefined;
   addState: (values: object, selector: string) => undefined;
   dispatch: (param1: any, param2: any) => Function | Promise;
